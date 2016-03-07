@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var storyboard = UIStoryboard(name: "Main", bundle: nil)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.initializeWithConfiguration(
+            ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "Instagram"
+                configuration.clientKey = "codepathweek6"
+                configuration.server = "https://secure-refuge-80136.herokuapp.com/parse"
+            })
+            
+        )
+
+        if PFUser.currentUser() != nil {
+            print("Current user detected")
+            let vc = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as UIViewController
+            window?.rootViewController = vc
+        }
         return true
     }
 
