@@ -27,7 +27,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/92TXgCL.gif' />
+<img src='InstagramParseWeek6/InstagramParse/Antonio-gram.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
