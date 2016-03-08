@@ -29,6 +29,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/RB6HRoB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+
 ## Notes
 
 Table View was giving trouble to actually display posts till the Query code was figured out
